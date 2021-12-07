@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilosP.css">
+	<title>PROMOCIONES</title>
+</head>
+<body>
+	<!-- Definimos la cabecera de nuestra pagina, en la cual incluiremos, barra de navegacion, logo, slogan -->
+    <header>
+	<!--Contenedor de nuestra barra de navegacion, utilizamos la etiqueta a para permitir al usuario navegar entre secciones -->
+        <nav>
+            <a href="index.html" class="etiqueta">INICIO</a>
+            <a href="menu.html" class="etiqueta">MENÚ</a>
+            <a href="galeria.html" class="etiqueta">GALERÍA</a>
+            <a href="promociones.html" class="etiqueta">PROMOCIONES</a>
+        </nav>
+	<!--Agregamos una seccion, donde tendremos un contenedor para el logo, potemos nuestra etiqueta h1 para el eslogan-->
+        <section class="textos-header">
+            <div class="logo">
+                <img src="img/letras.png" class="img-letras">
+            </div>
+            <h1>Potencializando tus sentidos</h1>
+        </section>
+    </header>
+	<!--Generamos nuestra seccion en donde ira el banner, en este bloque incluiremos un contenedor llamado ¨contenedor-sobre-banner¨ en donde pondremos nuestro banner-->
+        <section class="contenedor-banner">
+            <div class="contenedor-sobre-banner">
+                <img src="img/Sin.jpg" class="banner">
+            </div>
+        </section>
+    <!--En este bloque de codigo lo que hacemos es crear una seccion en la que se almacenaran los paquetes que ofrecemos, para ello ocupamos section, posteriormente titulamos la pagina con h2, creamos un contenedor para almacenar los contenedores individuales de cada paquete, en cada contenedor individual tenemos la imagen, otro div para la descripcion de estos mismo -->
+        <section class="contenedor-paquetes">
+        	<h2 class="titulo">PAQUETES</h2>
+        	<div class="contenedor-sobre-paquetes">
+        		<div class="img">
+        			<img src="img/paquete1.jpg" class="paq">
+        		<div class="des">
+        			<h3>BARBACOA $600</h3>
+        			1kg de barbacoa + 1Lt consome 
+        			Salsa verde y roja + 
+        			Cilantro y cebolla + 1kg tortillas +
+        			Refresco 2Lt 
+        		</div>
+        		</div>
+        		<div class="img">
+        			<img src="img/paquete2.jpeg" class="paq">
+        		<div class="des">
+        			<h3>COCHINITA PIBIL $500</h3>
+        			1kg de cochinita pibil + 1kg tortillas + Cebolla morada con habanero + Salsa verde o roja + Limones
+        		</div>
+        		</div>
+        		<div class="img">
+        			<img src="img/paquete3.jpg" class="paq">
+        		<div class="des">
+        			<h3>BIRRIA $370</h3>
+        			1kg de birria + 500ml consome + Cilantro y cebolla + Salsa verde o roja + Limones + 1/4kg tortillas
+        		</div>
+        		</div>
+        		<div class="img">
+        			<img src="img/paquete4.jpg" class="paq">
+        		<div class="des">
+        			<h3>ROSCA DE TACOS $600</h3>
+        			30 Tacos al pastor + Refresco 2Lt + 
+        			Encurtido de piñá + Cebollas cambray + Cilantro +
+        			Salsa 
+        		</div>
+        		</div>
+        		<div class="img">
+        			<img src="img/paquete5.jpg" class="paq">
+        		<div class="des">
+        			<h3>TACOS DE SUADERO $700</h3>
+        			30 Tacos de suadero + Refresco 2Lt + Cebollas cambray + Cilantro y cebolla + Chiles + Salsa
+        		</div>
+        		</div>
+        	</div>
+        </section>
+
+    <!--Generamos nuestra seccion en donde iran todos los cupones que
+    	hay disponibles en la página, para ello ocupamos contenedor-cupones, con la etiqueta h2 nombramos la seccion, y despues generamos un div que contenga a los cupones del 10% de descuento, y otro div con el nombre de cupon en donde almacenaremos la imagen del descuento, otro div para el titulo del cupon, p para parrafos. El codigo se repite 3 veces solo que tendra un div que almacenara a los 3 cupones de cada categoria-->
+        <section class="contenedor-cupones">
+        	<h2 class="titulo">CUPONES</h2>
+			<div class="cont-cupones">
+                <div class="cupon">
+                    <img src="img/10.jpg">
+                    <div class="contenido-texto-cupones">
+                        <h4>BEVIERNES</h4>
+                        <p>
+                            Al presentar este cupón te hacemos una rebaja del 10% en todas* las bebidas que consumas. 
+                        </p>
+                        <h4>RESTRICCIONES</h4>
+                        <p>
+                        	Valido hasta agotar existencias, el cupón solo es válido los días viernes, *no aplica cervezas.
+							Solo se admite un cupón por cuenta.
+                    	</p>
+                    </div>
+                </div>
+                <div class="cupon">
+                    <img src="img/10.jpg">
+                    <div class="contenido-texto-cupones">
+                        <h4>ECONIMIZA</h4>
+                        <p> 
+                            En la compra de $250 pesos en flautas te descontamos el 10% de descuento, este 10% es por cada $250 en flautas. 
+                        </p>
+                        <h4>RESTRICCIONES</h4>
+                        <p>
+                        	Valido únicamente de Lunes a Jueves de 14:30 a 17:00 hrs.
+                    	</p>
+                    </div>
+                </div>
+                <div class="cupon">
+                    <img src="img/10.jpg">
+                    <div class="contenido-texto-cupones">
+                        <h4>COMPLACETE</h4>
+                        <p>
+                            Al comprar 3 ordenes de tacos de suadero o al pastor* te descontamos el 10% del total de tu compra. 
+                        </p>
+                        <h4>RESTRICCIONES</h4>
+                        <p>
+                        	*Valido únicamente los lunes de 15:00 a 17:00 hrs.
+                    	</p>
+                    </div>
+                </div>
+            </div>
+            <!--Codigo para los cupones del 20 de descuento-->
+            <div class="cont-cupones20">
+                <div class="cupon">
+                    <img src="img/20.jpg">
+                    <div class="contenido-texto-cupones">
+                        <h4>COME BIEN</h4>
+                        <p>
+                            20% de descuento  al comprar 4 platos de pozole grande*
+                        </p>
+                        <h4>RESTRICCIONES</h4>
+                        <p>
+                        	*Aplica solamente los Martes de 15:00 a 18:00 hrs.
+                    	</p>
+                    </div>
+                </div>
+                <div class="cupon">
+                    <img src="img/20.jpg">
+                    <div class="contenido-texto-cupones">
+                        <h4>DISFRUTA</h4>
+                        <p>
+                            Al presentar este cupón te hacemos un descuento del 20% al comprar 4 ordenes de tostadas de tinga*. 
+                        </p>
+                        <h4>RESTRICCIONES</h4>
+                        <p>
+                        	*Aplica únicamente, los miercoles de 15:00 a 18:00 hrs.
+                    	</p>
+                    </div>
+                </div>
+                <div class="cupon">
+                    <img src="img/20.jpg">
+                    <div class="contenido-texto-cupones">
+                        <h4>ENDULZATE</h4>
+                        <p>
+                            Al consumir $200 pesos en postres* te hacemos el 20% descuento en tu cuenta total. 
+                        </p>
+                        <h4>RESTRICCIONES</h4>
+                        <p>
+                        	*Aplica unicamente los Jueves de 18:00 a 21:00 horas.
+                    	</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Div con cupones del 25% de descuento -->
+            <div class="cont-cupones25">
+                <div class="cupon">
+                    <img src="img/25.jpg">
+                    <div class="contenido-texto-cupones">
+                        <h4>CONSIÉNTETE</h4>
+                        <p>
+                            Al consumir más de $700 pesos en poc chuc te hacemos un 25% de descuento. 
+                        </p>
+                        <h4>RESTRICCIONES</h4>
+                        <p>
+                        	Valido solamente los Martes de 14:30 a 20:00 hrs.
+                    	</p>
+                    </div>
+                </div>
+                <div class="cupon">
+                    <img src="img/25.jpg">
+                    <div class="contenido-texto-cupones">
+                        <h4>DELEITATE</h4>
+                        <p>
+                            Al comprar $600 pesos en cochinita pibil. 
+                        </p>
+                        <h4>RESTRICCIONES</h4>
+                        <p>
+                        	Aplica únicamente los Lunes de 19:00 a 21:00 horas.
+                    	</p>
+                    </div>
+                </div>
+                <div class="cupon">
+                    <img src="img/25.jpg">
+                    <div class="contenido-texto-cupones">
+                        <h4>ATRÉVETE</h4>
+                        <p>
+                            Al presentar este cupón te hacemos un descuento del 25% al consumir $800 pesos en tacos de barbacoa. 
+                        </p>
+                        <h4>RESTRICCIONES</h4>
+                        <p>
+                        	Valido los Martes de 16:00 a 18:00 horas.
+                    	</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--En este bloque de codigo nos encontramos con el pie de pagina,
+    tenemos un div para almacenar toda la informacion que que ira en los div posteriores, los cuales contendran una etiqueta h4 para hacer destacar el dato que se pondra y p para escribir debajo. Al final añadimos una etiqueta h4 para poner el copyright -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="cont-foo">
+                <h4>Nombre de pila</h4>
+                <p>Osvaldo</p>
+            </div>
+            <div class="cont-foo">
+                <h4>Materia</h4>
+                <p>Programacion web</p>
+            </div>
+            <div class="cont-foo">
+                <h4>Institucion</h4>
+                <p>UNAM</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; PWEB2021-5to</h2>
+    </footer>
+
+</body>
+</html>

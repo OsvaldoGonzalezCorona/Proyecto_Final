@@ -1,0 +1,245 @@
+/*Hacemos universal el valor del margen, padding y box sizing para todos los elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Universalizamos la fuente de letra*/
+body {
+    font-family: 'arial';
+}
+
+/*Modificamos las propiedades de nuestra etiqueta H1
+ponemos un color verde, un relleno de las letras asi como 
+un relleno superior e inferior, alineacion centrica y un
+tamaño*/
+.titulo {
+    color: green;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 50px;
+}
+
+/*Modificamos nuestro span para convertirlo en linea
+le cambiamos el color y aplicamos un display block para
+que su compartamiento respete anchos, altos, etc*/
+.divisor{
+    background: goldenrod;
+    height: 5px;
+    width: 100%;
+    display: block;
+}
+
+/*Hacemos uso de un display para formar nuestra cuadricula,
+despueste con grid-template-columns formamos nuestras columnas con
+un valor de traza de 1, ajustamos el ancho a un 95% de nuestro total
+margen auto para centrar, grid-gap para los espacios entre columnas y filas
+*/
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    width: 95%;
+    margin: auto;
+    grid-gap: 25px;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+/*modificamos las dimensiones de la imagen
+y alineamos nuestras imagenes con el elemento
+superior*/
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5;
+}
+/*Aplicamos un display block para que pierda
+la propiedad de inline, ocultamos los contenidos
+que se salgan de la caja del elemento, aplicamos una
+sombra, son modificaciones hacia las imagenes*/
+.rimagen{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgb(0, 0, 0, .7);
+}
+/*efecto que distorciona y gira la imagen*/
+.rimagen:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
+}
+/*Modificaciones de la ampliacion de la imagen
+ocupamos un flex box para alinear los elementos, 
+damos una transicion, ponemos un fondo negro con 
+transparencia, dimensionamos la imagen*/
+.lb{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0,.5);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: transform .3s ease-in-out;
+}
+/*Damos las dimensiones en viewport height que se basa en el alto
+de la pantalla y viewport width sera el ancho de nuestra ventana,
+estas dimensiones son de la imagen de ampliacion*/
+.lb img{
+    width: 75vw;
+    max-height: 70vh;
+}
+/*Animacion que hace visible la ampliacion de la imagen 
+cuando se haga un click sobre esta*/
+.lb:target{
+    transform: scale(1);
+}
+/*En este codigo se hacen las modificaciones para el 
+generar el boton de cerrar con una etiqueta a, se posiciona, 
+cambia el color, quitamos la decoracion de la etiqueta a, 
+la redondeamos, le damos dimensiones, centramos el texto
+y le damos un color de fondo*/
+.cerrar{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+/* HEADER */
+
+/*Dimensiones que ocupara el encabezado, asi como el color de fondo*/
+header {
+    width: 100%;
+    height: 600px;
+    background: lightgray;
+}
+
+/*Alineamos los elementos de la nav a la derecha y les damos un 
+relleno superior y derecho*/
+nav{
+    text-align: right;
+    padding: 40px 50px 0 0;
+}
+
+/*Hacemos referencia a las etiquetas a que se encuentran en la nav
+cambiamos el rellono de las letras, aplicamos un margen derecho y el 
+color de la fuente, quitamos el estilo de la etiqueta*/
+.etiqueta{
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/*Efecto que se les dara a las etiquetas a cuando el usuario ponga el
+cursor sobre ellas cambiaran de color y se subrayaran*/
+.etiqueta:hover{
+	color: blue;
+    text-decoration: underline;
+}
+
+/*Modificaciones hacia el eslogan, la dimension de lo alto,
+su alineacion la centramos, con flex direction hacemos que
+se ponga debajo del logo*/
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Cambiamos el tamaño del eslogan y relleno, asi como el color*/
+.textos-header h1{
+    font-size: 50px;
+    font-weight: 700;
+    color:white;
+}
+
+/*Modificamos la dimension del contenedor que almacenara a la imagen
+alineamos los elementos que esten dentro de el y asignamos un margen 
+superior*/
+.logo {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Ajustamos el tamaño de nuestro logo*/
+.img-letras{
+    width: 80%;
+}
+
+/* FOOTER */
+
+/*Establecemos el color de fondo del pie de pagina, asignamos valores de 
+relleno superior e inferior, centralizamos el elemento de forma horizontal 
+con margin auto y recortamos el contenido por si se pasa del footer no lo 
+muestre*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Centramos los elementos que iran dentro del contenedor del footer, asignamos
+una anchura del 90%, distribuimos de forma equitativa los elementos, damos un
+relleno inferior y creamos una linea inferior con el borde inferior*/
+.contenedor-footer{
+
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #ccc;
+}
+
+/*Centramos el texto del contenedor*/
+.cont-foo{
+    text-align: center;
+}
+
+/*Modificamos las propiedades de relleno, borde y margen inferior asi como el color
+de los subtitulos de cada apartado del footer*/
+.cont-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/*Modificamos el color del parrafo*/
+.cont-foo  p{
+    color: #ccc;
+}
+
+/*Cambiamos el color del titulo del copy, el tamaño, margen superior
+y su alineacion*/
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}

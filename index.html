@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Anexamos nuestra hoja de esilos-->
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>DELEITAMEX</title>
+	</head>
+<body>
+<!-- Definimos la cabecera de nuestra pagina, en la cual incluiremos, barra de navegacion, logo, slogan -->
+    <header>
+	<!--Contenedor de nuestra barra de navegacion, utilizamos la etiqueta a para permitir al usuario navegar entre secciones -->
+        <nav>
+            <a href="index.html" class="etiqueta">INICIO</a>
+            <a href="menu.html" class="etiqueta">MENÚ</a>
+            <a href="galeria.html" class="etiqueta">GALERÍA</a>
+            <a href="promociones.html" class="etiqueta">PROMOCIONES</a>
+        </nav>
+	<!--Agregamos una seccion, donde tendremos un contenedor para el logo, potemos nuestra etiqueta h1 para el eslogan-->
+        <section class="textos-header">
+            <div class="logo">
+                <img src="img/letras.png" class="img-letras">
+            </div>
+            <h1>Potencializando tus sentidos</h1>
+        </section>
+    </header>
+	<!--Generamos un main para representar el contenido principal, este main tendra las secciones de nosotros, menu, promociones y galeria-->
+    <main>
+	<!--Generamos nuestra seccion "Nosotros", en este bloque incluiremos la h2 para el titulo de la seccion,
+	un contenedor llamado ¨contenedor-sobre-nosotros¨ en donde pondremos nuestro logo, posteriormete generamos otro contenedor
+	para almacenar nuestros textos, la etiqueta h3 para los subtitulos, p para los parrafos y el span para poder hacerlo redondo 
+	y enumerar los subtitulos-->
+        <section class="contenedor-nosotros">
+            <h2 class="titulo" id="nos">NOSOTROS</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/logo1.png" class="imagen-nosotros">
+                <div class="contenido-textos">
+                    <h3><span>1</span>ACERCA DE</h3>
+                    <p>Deleitamex se creo con el propósito de agradar el paladar de nuestros clientes, logrando potencializar al 
+                    maximo sus sentidos. <br>
+                    Para deleitamex nuestros clientes son lo más importante.
+                    ¿Y tú qué esperas para visitarnos? <br>
+                    ¡Te esperamos!<br>
+                    Nos ubicamos en:<br>
+                    Calle: Braulio Garza No 20<br>
+                    Colonia: Libertad de Oriente, Cuauhtémoc</p>
+                    <h3><span>2</span>¿QUÉ VENDEMOS?</h3>
+                    <p>Platillos tipicos, elaborados con ingredientes de alta
+                        calidad, te ofreces sabores de distintos Estados de la Republica Mexicana para disfrutar solo, en familia o con amigos. <br>
+                        ¡Te esperamos!</p>
+                    <h3><span>3</span>NUESTROS HORARIOS</h3>
+                    <p>Lunes a Jueves de 2:30p.m. a 12p.m.
+                        <br>
+                        Viernes a Sábado de 5:00p.m. a 12p.m.
+                        <br>
+                        Domingo de 8:00a.m. a 3:00p.m.</p>
+                </div>
+            </div>
+        </section>
+	<!--Creamos otra seccion donde iran algunos platillos de nuestro menu, creamos un contenedor global que contendra a nuestros platillos Y titulo,
+ 	posteriormente generamos la etiqueta h2 para el titulo de la seccion, despues creamos un div para colocar las imganes y dentro de ese contenedor
+	creamos el contenedor de imagen individual, con otro div para crear el efecto hover con su respectiva imagen que resaltara al pasar el cursor 
+	sobre la imagen y una etiqueta p para el nombre del platillo, en este caso el codigo se repite desde el contenedor de imagen hasta el nombre-->
+        <section class="menu">
+            <div class="contenedor-menu">
+                <a href="menu.html" class="atitulo">
+                    <h2 class="titulo" id="men">MENÚ</h2>
+                </a>
+                <div class="galeria-menu">
+                    <div class="imagen-menu">
+                        <img src="img/barbacoa.jpg">
+                        <div class="hover-galeria">
+                            <img src="img/aroma.png">
+                            <p>Barbacoa</p>
+                        </div>
+                    </div>
+                    <div class="imagen-menu">
+                        <img src="img/poz.jpg">
+                        <div class="hover-galeria">
+                            <img src="img/aroma.png">
+                            <p>Pozole</p>
+                        </div>
+                    </div>
+                    <div class="imagen-menu">
+                        <img src="img/Tacos.jpg">
+                        <div class="hover-galeria">
+                            <img src="img/aroma.png">
+                            <p>Tacos al pastor</p>
+                        </div>
+                    </div>
+                    <div class="imagen-menu">
+                        <img src="img/tacos-de-suadero.jpg">
+                        <div class="hover-galeria">
+                            <img src="img/aroma.png">
+                            <p>Tacos de suadero</p>
+                        </div>
+                    </div>
+                    <div class="imagen-menu">
+                        <img src="img/poc.jpg">
+                        <div class="hover-galeria">
+                            <img src="img/aroma.png">
+                            <p>Poc chuc</p>
+                        </div>
+                    </div>
+                    <div class="imagen-menu">
+                        <img src="img/Chilaquilesr.jpg">
+                        <div class="hover-galeria">
+                            <img src="img/aroma.png">
+                            <p>Chilaqules rojos</p>
+                        </div>
+                    </div>
+                    <div class="imagen-menu">
+                        <img src="img/cochinitapibil.jpg">
+                        <div class="hover-galeria">
+                            <img src="img/aroma.png">
+                            <p>Cochinita Pibil</p>
+                        </div>
+                    </div>
+                    <div class="imagen-menu">
+                        <img src="img/Birria.jpg">
+                        <div class="hover-galeria">
+                            <img src="img/aroma.png">
+                            <p>Birria</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	<!--En este bloque tenemos nuestra seccion de promociones, en ella encontramos la etiqueta h2 para titular esta seccion, establecemos un contenedor en el que se almacenaran las tarjetas
+        de las promociones, cada trajeta tiene consigo un contenedor para guardar la imagen una etiqueta h4 para los nombres de las promos y una etiqueta p para la descripcion de la promo-->
+        <section class="contenedor-promo">
+            <a href="promociones.html" class="atitulo">
+            <h2 class="titulo" id="promo">PROMOCIONES</h2>
+            </a>
+            <div class="cont-tarjetas">
+                <div class="tar">
+                    <img src="img/promo-1.jpg">
+                    <div class="contenido-texto-tar">
+                        <h4>Lunes: ¡PKT llenes!</h4>
+                        <p>
+                            2 × 1 tacos de birria y barbacoa 
+                        </p>
+                    </div>
+                </div>
+                <div class="tar">
+                    <img src="img/promo-2.jpg">
+                    <div class="contenido-texto-tar">
+                        <h4>Martes: ¡PKT ahorres!</h4>
+                        <p>
+                            Chilaquiles verdes + refresco 600ml. $60 
+                        </p>
+                    </div>
+                </div>
+                <div class="tar">
+                    <img src="img/promo-3.jpg">
+                    <div class="contenido-texto-tar">
+                        <h4>Miercoles: ¡PKT atiborres!</h4>
+                        <p>
+                            Cochinita pibil Taco a $20  
+                        </p>
+                    </div>
+                </div>
+                <div class="tar">
+                    <img src="img/promo-4.jpg">
+                    <div class="contenido-texto-tar">
+                        <h4>Jueves: ¡PKT hartes!</h4>
+                        <p>Tostadas de tinga. Orden de 3 × $55</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- En este bloque de codigo lo que haremos es crear una seccion llamada
+        galeria, tendra un contenedor en donde se pondra las etiquetas h3, los
+        div de las imagenes, imagenes y los parrafos, cada imagen tendra su propio div,
+        h3 y parrafo de descripcion-->
+        <section class="galeria">
+            <div class="contenedor-galeria">
+                <a href="galeria.html" class="atitulo">
+                <h2 class="titulo" id="gal">GALERÍA</h2>
+                </a>
+                <div class="cont-img-gal">
+                    <div class="cont-img-h3-p">
+                        <div class="formato">
+                        <img src="img/arango-terraza.jpg">
+                        </div>
+                        <h3>Instalaciones</h3>
+                        <p>Disfruta de una excelente vista
+                           y sientete como en casa.</p>
+                    </div>
+                    <div class="cont-img-h3-p">
+                        <div class="formato">
+                        <img src="img/eventofinanio.jpg">
+                        </div>
+                        <h3>Eventos</h3>
+                        <p>En el restaurante nos adaptamos a las 
+                           celebraciones de todo el año.</p>
+                    </div>
+                    <div class="cont-img-h3-p">
+                        <div class="formato">
+                        <img src="img/bebidas.jpg">
+                        </div>
+                        <h3>Barra</h3>
+                        <p>Disfruta de nuestras diferentes bebidas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--En este bloque de codigo nos encontramos con el pie de pagina,
+    tenemos un div para almacenar toda la informacion que que ira en los div posteriores, los cuales contendran una etiqueta h4 para hacer destacar el dato que se pondra y p para escribir debajo. Al final añadimos una etiqueta h4 para poner el copyright -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="cont-foo">
+                <h4>Nombre de pila</h4>
+                <p>Osvaldo</p>
+            </div>
+            <div class="cont-foo">
+                <h4>Materia</h4>
+                <p>Programacion web</p>
+            </div>
+            <div class="cont-foo">
+                <h4>Institucion</h4>
+                <p>UNAM</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; PWEB2021-5to</h2>
+    </footer>
+</body>
+</html>

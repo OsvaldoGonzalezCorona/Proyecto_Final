@@ -1,0 +1,351 @@
+/*Hacemos universal el valor del margen, padding y box sizing para todos los elementos*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Universalizamos la fuente de letra*/
+body {
+    font-family: 'arial';
+}
+
+/*Todos nuestros titulos de cada seccion seran de color verde
+ajustamos la posicion, tamaño de letra y margen inferior*/
+.titulo {
+    color: GREEN;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+/* HEADER */
+
+/*Dimensiones que ocupara el encabezado, asi como el color de fondo*/
+header {
+    width: 100%;
+    height: 600px;
+    background: lightgray;
+}
+
+/*Alineamos los elementos de la nav a la derecha y les damos un 
+relleno superior y derecho*/
+nav{
+    text-align: right;
+    padding: 40px 50px 0 0;
+}
+
+/*Hacemos referencia a las etiquetas a que se encuentran en la nav
+cambiamos el rellono de las letras, aplicamos un margen derecho y el 
+color de la fuente, quitamos el estilo de la etiqueta*/
+.etiqueta{
+    color:white;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+/*Efecto que se les dara a las etiquetas a cuando el usuario ponga el
+cursor sobre ellas cambiaran de color y se subrayaran*/
+.etiqueta:hover{
+	color: blue;
+    text-decoration: underline;
+}
+
+/*Modificaciones hacia el eslogan, la dimension de lo alto,
+su alineacion la centramos, con flex direction hacemos que
+se ponga debajo del logo*/
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*Cambiamos el tamaño del eslogan y relleno, asi como el color*/
+.textos-header h1{
+    font-size: 50px;
+    font-weight: 700;
+    color:white;
+}
+
+/*Modificamos la dimension del contenedor que almacenara a la imagen
+alineamos los elementos que esten dentro de el y asignamos un margen 
+superior*/
+.logo {
+    display: flex;
+    width: 80%;
+    height: 400px;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Ajustamos el tamaño de nuestro logo*/
+.img-letras{
+    width: 80%;
+}
+
+/*BANNER*/
+/*Centramos los elementos del contenedor*/
+.contenedor-sobre-banner{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 500px;
+}
+/*Ajustamos el tamaño de nuestro banner*/
+.banner{
+    width: 100%;
+}
+
+/*PAQUETES*/
+.contenedor-paquetes{
+    padding: 60px 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: lightgray;
+}
+/*Div que almacenara a los div individuales, aqui modificamos el 
+comportamiento de esos contenedores individuales, distribuyendolos 
+de forma equitativa*/
+.contenedor-sobre-paquetes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/*Div que almacenara la imagen*/
+div.img{
+    margin: 5px;
+    border: 2px solid black;
+    float: left;
+    width: 300px;
+}
+/*Efecto aplicado al borde del contenedor*/
+div.img:hover{
+    border: 2px solid red;
+}
+
+/*Dimensiones de la imagen*/
+.paq{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*Div de la descripcion de los paquete, aplicamos un interlineado,
+centramos el texto, asignamos un fondo y relleno*/
+.des{
+    padding: 15px;
+    text-align: center;
+    line-height: 25px;
+    background: white;
+}
+
+/*SECCION CUPONES*/
+/*Ajustamos el relleno superior e inferior de la seccion cupones*/
+.contenedor-cupones {
+    padding: 60px 0;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+/*En este contenedor vamos a modificar el comportamiento
+de las cupones individuales en el contenedor cupones*/
+.cont-cupones{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*Modificamos los contenedores individuales de los cupones
+centramos los items que contendra, redondeamos los bordes,
+cambiamos color, aplicamos sombras, tamaño entre otras cosas*/
+.cont-cupones .cupon{
+    background: rebeccapurple;
+    display: flex;
+    width: 26%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+/*Ajustes de la imagen del contenedor*/
+.cont-cupones .cupon img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: block;
+}
+/*En este codigo lo que hacemos es modificar el 
+div de los textos, sus caracteristicas como lo 
+son color, alineacion y anchura*/
+.cont-cupones  .cupon > .contenido-texto-cupones{
+    width: 60%;
+    color: whitesmoke;
+    text-align: justify;
+}
+/*Modificamos el relleno del parrafo, y un 
+borde superior del texto con la etiqueta*/
+.cont-cupones .cont-cupones20 .cupon> .contenido-texto-cupones p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*En este contenedor vamos a modificar el comportamiento
+de las cupones individuales en el contenedor cupones*/
+.cont-cupones20{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*Modificamos los contenedores individuales de los cupones
+centramos los items que contendra, redondeamos los bordes,
+cambiamos color, aplicamos sombras, tamaño entre otras cosas*/
+.cont-cupones20 .cupon{
+    background: darkblue;
+    display: flex;
+    width: 26%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+/*Ajustes de la imagen del contenedor*/
+.cont-cupones20 .cupon img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: block;
+}
+/*En este codigo lo que hacemos es modificar el 
+div de los textos, sus caracteristicas como lo 
+son color, alineacion y anchura*/
+.cont-cupones20 .cupon > .contenido-texto-cupones{
+    width: 60%;
+    color: whitesmoke;
+    text-align: justify;
+}
+/*Modificamos el relleno del parrafo, y un 
+borde superior del texto con la etiqueta*/
+.cont-cupones20 .cupon> .contenido-texto-cupones p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*En este contenedor vamos a modificar el comportamiento
+de las cupones individuales en el contenedor cupones*/
+.cont-cupones25{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+/*Modificamos los contenedores individuales de los cupones
+centramos los items que contendra, redondeamos los bordes,
+cambiamos color, aplicamos sombras, tamaño entre otras cosas*/
+.cont-cupones25 .cupon{
+    background: saddlebrown;
+    display: flex;
+    width: 26%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 15px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+/*Ajustes de la imagen del contenedor*/
+.cont-cupones25 .cupon img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: block;
+}
+/*En este codigo lo que hacemos es modificar el 
+div de los textos, sus caracteristicas como lo 
+son color, alineacion y anchura*/
+.cont-cupones25 .cupon > .contenido-texto-cupones{
+    width: 60%;
+    color: whitesmoke;
+    text-align: justify;
+}
+/*Modificamos el relleno del parrafo, y un 
+borde superior del texto con la etiqueta*/
+.cont-cupones25 .cupon> .contenido-texto-cupones p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/* FOOTER */
+
+/*Establecemos el color de fondo del pie de pagina, asignamos valores de 
+relleno superior e inferior, centralizamos el elemento de forma horizontal 
+con margin auto y recortamos el contenido por si se pasa del footer no lo 
+muestre*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*Centramos los elementos que iran dentro del contenedor del footer, asignamos
+una anchura del 90%, distribuimos de forma equitativa los elementos, damos un
+relleno inferior y creamos una linea inferior con el borde inferior*/
+.contenedor-footer{
+
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #ccc;
+}
+
+/*Centramos el texto del contenedor*/
+.cont-foo{
+    text-align: center;
+}
+
+/*Modificamos las propiedades de relleno, borde y margen inferior asi como el color
+de los subtitulos de cada apartado del footer*/
+.cont-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/*Modificamos el color del parrafo*/
+.cont-foo  p{
+    color: #ccc;
+}
+
+/*Cambiamos el color del titulo del copy, el tamaño, margen superior
+y su alineacion*/
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}

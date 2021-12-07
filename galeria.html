@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="estilosG.css">
+	<title>GALERIA</title>
+</head>
+<body>
+	<header>
+	<!--Contenedor de nuestra barra de navegacion, utilizamos la etiqueta a para permitir al usuario navegar entre secciones -->
+        <nav>
+            <a href="index.html" class="etiqueta">INICIO</a>
+            <a href="Menu.html" class="etiqueta">MENÚ</a>
+            <a href="galeria.html" class="etiqueta">GALERÍA</a>
+            <a href="promociones.html" class="etiqueta">PROMOCIONES</a>
+        </nav>
+	<!--Agregamos una seccion, donde tendremos un contenedor para el logo, potemos nuestra etiqueta h1 para el eslogan-->
+        <section class="textos-header">
+            <div class="logo">
+                <img src="img/letras.png" class="img-letras">
+            </div>
+            <h1>Potencializando tus sentidos</h1>
+        </section>
+    </header>
+
+    <!--Ponemos el titulo de la galeria -->
+    <h1 class="titulo">GALERÍA</h1>
+    <!--Linea que dividira al titulo y las imagenes -->
+    <span class="divisor" id="div"></span>
+    <!-- Seccion en donde almacenaremos todas las imagenes, a cada imagen
+        le ponemos una etiqueta a la cual nos permitira hacer el uso de target para la animacion de ampliacion de nuestra galeria
+    -->
+    <section class="galeria">
+    	<a href="#imagen1" class="rimagen">
+    		<img src="img/instalaciones.jpg">
+    	</a>
+    	<a href="#imagen2" class="rimagen">
+    		<img src="img/instalaciones2.jpg">
+    	</a>
+    	<a href="#imagen3" class="rimagen">
+    		<img src="img/instalaciones3.jpg">
+    	</a>
+    	<a href="#imagen4" class="rimagen">
+    		<img src="img/instalaciones4.jpg">
+    	</a>
+    	<a href="#imagen5" class="rimagen">
+    		<img src="img/tacos.jpg">
+    	</a>
+    	<a href="#imagen6" class="rimagen">
+    		<img src="img/poz.jpg">
+    	</a>
+    	<a href="#imagen7" class="rimagen">
+    		<img src="img/poc.jpg">
+    	</a>
+    	<a href="#imagen8" class="rimagen">
+    		<img src="img/barbacoa.jpg">
+    	</a>
+    	<a href="#imagen9" class="rimagen">
+    		<img src="img/evento1.jpg">
+    	</a>
+    	<a href="#imagen10" class="rimagen">
+    		<img src="img/evento2.jpg">
+    	</a>
+    	<a href="#imagen11" class="rimagen">
+    		<img src="img/evento3.jpg">
+    	</a>
+    	<a href="#imagen12" class="rimagen">
+    		<img src="img/evento4.jpg">
+    	</a>
+    </section>
+    <!--Estas lineas de codigo son las que hacen posible
+    el efecto target, para que cuando se de click la imagen se 
+    amplie siendo esta la misma, el codigo se repite para todas 
+    nuestras imagenes de la galeria, cambiando los id, y las imagenes
+    pertinentes, ocupamos article para generar bloque independientes
+    del sitio web -->
+    <article class="lb" id="imagen1">
+        <img src="img/instalaciones.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen2">
+        <img src="img/instalaciones2.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen3">
+        <img src="img/instalaciones3.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen4">
+        <img src="img/instalaciones4.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen5">
+        <img src="img/tacos.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen6">
+        <img src="img/poz.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen7">
+        <img src="img/poc.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen8">
+        <img src="img/barbacoa.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen9">
+        <img src="img/evento1.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen10">
+        <img src="img/evento2.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen11">
+        <img src="img/evento3.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+
+    <article class="lb" id="imagen12">
+        <img src="img/evento4.jpg">
+        <a href="#div" class="cerrar">X</a>
+    </article>
+    <!--En este bloque de codigo nos encontramos con el pie de pagina,
+    tenemos un div para almacenar toda la informacion que que ira en los div posteriores, los cuales contendran una etiqueta h4 para hacer destacar el dato que se pondra y p para escribir debajo. Al final añadimos una etiqueta h4 para poner el copyright -->
+    <footer>
+        <div class="contenedor-footer">
+            <div class="cont-foo">
+                <h4>Nombre de pila</h4>
+                <p>Osvaldo</p>
+            </div>
+            <div class="cont-foo">
+                <h4>Materia</h4>
+                <p>Programacion web</p>
+            </div>
+            <div class="cont-foo">
+                <h4>Institucion</h4>
+                <p>UNAM</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; PWEB2021-5to</h2>
+    </footer>
+</body>
+</html>
